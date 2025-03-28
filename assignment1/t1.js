@@ -1,7 +1,7 @@
 async function fetchData() {
         const response = await fetch('https://reqres.in/api/users/1');
-        const json = await response.json();
-        console.log(json);
+        const data = await response.json();
+        console.log("Response Data:", data);
 }
 
 fetchData();
